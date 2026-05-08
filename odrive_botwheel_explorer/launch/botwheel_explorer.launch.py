@@ -78,6 +78,9 @@ def generate_launch_description():
             robot_controllers
         ],
         output="both",
+        remappings=[
+            ("/botwheel_explorer/cmd_vel_unstamped", "/cmd_vel"),
+        ],
     )
     robot_state_pub_node = Node(
         package="robot_state_publisher",
