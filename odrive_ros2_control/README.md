@@ -25,6 +25,9 @@ For a high level usage example, see the [BotWheel Explorer ROS2 Package](../odri
 - Error feedback & error handling: If an ODrive disarms for some reason (e.g. undervoltage), the application that connects to ros2_control will currently not be notified.
 - Other telemetry: Additional data like temperatures, DC voltage, etc. are currently not propagated through ros2_control up to the application.
 
+**Out of scope**
+
+- Transmission (aka gearbox): This is already handled on the ODrive side, see [Gearbox Configuration](https://docs.odriverobotics.com/v/latest/manual/hardware-config.html#gearbox-configuration).
 
 ## Parameters
 
